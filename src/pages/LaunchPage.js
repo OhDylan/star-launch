@@ -58,16 +58,16 @@ const LaunchPage = () => {
   return (
     <div style={{overflow: "hidden"}}>
       <Row style={{marginTop: 10}}>
-        <Col xs={0} sm={8} ></Col>
-        <Col  justify='center' xs={24} sm={{span: 8, offset: 3}}><Title>Launch Pad</Title></Col>
-        <Col xs={0} sm={8}></Col>
+        <Col xs={2} sm={8} ></Col>
+        <Col  justify='center' xs={20} sm={{span: 8, offset: 3}}><Title>Launch Pad</Title></Col>
+        <Col xs={2} sm={8}></Col>
       </Row>
       <Row justify='center' style={{marginTop: 10, marginBottom: 30}} >
-        <Col xs={0} sm={4} ></Col>
-        <Col xs={24} sm={{span:16, offset: 2}} >
+        <Col xs={2} sm={4} ></Col>
+        <Col xs={20} sm={{span:16, offset: 2}} >
           <SearchBar query={query} setQuery={setQuery} />
         </Col>
-        <Col xs={0} sm={4}></Col>
+        <Col xs={2} sm={4}></Col>
       </Row>
       <Row justify='center' style={{marginTop: 10, marginBottom: 30}} >
         <Col xs={2} sm={4} ></Col>

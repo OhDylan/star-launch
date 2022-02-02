@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Star Launch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A single page app that provides the functionality to search for failed launches of a launch pad and all the satellites of Star Link by date. 
 
-## Available Scripts
+> ###### Frontend: React, Ant Design Library
+> ###### API: SpaceX API
 
-In the project directory, you can run:
+Please check out the live demo here:
 
-### `npm start`
+[Star Link](https://star-launch.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You may select to search for failed launches by launch pad (Launch Pad), or to search the satellites (Star Link).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![starlaunch_landing](https://user-images.githubusercontent.com/49362324/152179548-29dd3237-82fa-4361-bf40-02d45229e3d1.png)
 
-### `npm test`
+Click on Launch Pad.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![starlaunch_launchpage](https://user-images.githubusercontent.com/49362324/152179644-d620a893-72b7-4b06-9c9a-3989a60afeca.png)
 
-### `npm run build`
+Paste in the launch pad id with failure launches. 
+```
+5e9e4502f5090995de566f86
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![starlaunch_launchpage_result](https://user-images.githubusercontent.com/49362324/152180483-6d7e7185-a973-46b1-a2ce-a2c07fe6cac8.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Paste in the launch pad id with no failure launches. 
+```
+5e9e4502f509092b78566f87
+```
+![starlaunch_launchpage_nofailureresult](https://user-images.githubusercontent.com/49362324/152180737-4db5161e-643d-4a7f-be44-18be980040ce.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Type in random id and you are expecting to see this response:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![starlaunch_launchpage_idnotfound](https://user-images.githubusercontent.com/49362324/152180765-8bc1fe05-3bab-451c-8343-f44f10578adf.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click on "Star Link" at the bottom right of Launch Page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![starlaunch_starlink](https://user-images.githubusercontent.com/49362324/152180875-4160e6d7-4ca9-4ac5-ac61-50d751987068.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You may pick the filter to search by date, month, or year.
 
-## Learn More
+![starlaunch_starlink_showdatepicker](https://user-images.githubusercontent.com/49362324/152180999-b8db8c40-d763-4c67-a638-bab450adfafa.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![starlaunch_starlink_showresults](https://user-images.githubusercontent.com/49362324/152181043-1078b8e8-24ef-47d7-ad67-df4fefe21f36.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You may git clone and run tests for the util functions (located in src/utils/library.test.js). 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

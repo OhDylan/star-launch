@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Row, Col, Typography, DatePicker, Dropdown, Menu, Button } from 'antd';
+import React, { useState } from 'react';
+import { Row, Col, Typography, DatePicker, Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons/lib/icons';
 import { getAllSatellites, filterByDate } from '../utils/library';
 import JsonPanel from '../components/JsonPanel';
@@ -11,15 +11,7 @@ const StarLinkPage = () => {
 
   const [satelliteData, setSatteliteData] = useState([]);
   const [filter, setFilter] = useState("");
-  const [count, setCount] = useState(satelliteData.length);
-
-  // useEffect(() => {
-  //   getAllSatellites()
-  //   .then(data => {
-  //     setSatteliteData(data)
-  //     setCount(satelliteData.length)
-  //   })
-  // }, [])
+  const [count, setCount] = useState(0);
 
   const dateSelected = (moment, dateString) => {
     getAllSatellites()
@@ -32,6 +24,8 @@ const StarLinkPage = () => {
 
   const toggleFilter = (e) => {
     setFilter(e.target.innerText.toLowerCase())
+    setSatteliteData([])
+    setCount(0)
   }
 
   const menu = (
@@ -63,7 +57,7 @@ const StarLinkPage = () => {
             Filter By <DownOutlined />
           </a>
         </Dropdown>
-          <DatePicker onChange={dateSelected} picker={filter} style={{width: "20%"}}/>
+          <DatePicker onChange={dateSelected} picker={filter} style={{width: "20%"}} />
         </Col>
         <Col xs={2} sm={4}></Col>
       </Row>

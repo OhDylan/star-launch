@@ -7,7 +7,7 @@ const { Title, Text } = Typography;
 const LandingPage = () => {
     return (
         <div style={{width:"100vw"}} >
-            <Row align='middle'>
+            <Row align='middle' style={{height: "100vh"}} >
                 <Col xs={0} sm={2}></Col>
                 <Col xs={24} sm={12}>
                     <img src={LandingSVG} alt="Landing" style={{padding: 10, maxWidth: "100%"}} />

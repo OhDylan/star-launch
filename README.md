@@ -11,41 +11,38 @@ Please check out the live demo here:
 
 You may select to search for failed launches by launch pad (Launch Pad), or to search the satellites (Star Link).
 
-![starlaunch_landing](https://user-images.githubusercontent.com/49362324/152179548-29dd3237-82fa-4361-bf40-02d45229e3d1.png)
+![starlaunch_landing](https://user-images.githubusercontent.com/49362324/152183656-15ab3fdf-234d-4ec7-a3b7-aa4d58880b08.png)
 
 Click on Launch Pad.
 
-![starlaunch_launchpage](https://user-images.githubusercontent.com/49362324/152179644-d620a893-72b7-4b06-9c9a-3989a60afeca.png)
+![starlaunch_launchpage](https://user-images.githubusercontent.com/49362324/152183699-eccadee8-5982-48d2-85ba-c40e921ff7e8.png)
 
 Paste in the launch pad id with failure launches. 
 ```
 5e9e4502f5090995de566f86
 ```
 
-![starlaunch_launchpage_result](https://user-images.githubusercontent.com/49362324/152180483-6d7e7185-a973-46b1-a2ce-a2c07fe6cac8.png)
+![starlaunch_launchpage_result](https://user-images.githubusercontent.com/49362324/152183732-5629dfe2-536b-4562-9135-4cfd13add72d.png)
 
 Paste in the launch pad id with no failure launches. 
 ```
 5e9e4502f509092b78566f87
 ```
-![starlaunch_launchpage_nofailureresult](https://user-images.githubusercontent.com/49362324/152180737-4db5161e-643d-4a7f-be44-18be980040ce.png)
-
+![starlaunch_launchpage_nofailureresult](https://user-images.githubusercontent.com/49362324/152183788-501fd429-be2f-4e7c-b690-430fc14f2a11.png)
 
 Type in random id and you are expecting to see this response:
 
-![starlaunch_launchpage_idnotfound](https://user-images.githubusercontent.com/49362324/152180765-8bc1fe05-3bab-451c-8343-f44f10578adf.png)
+![starlaunch_launchpage_idnotfound](https://user-images.githubusercontent.com/49362324/152183837-c7428b65-4ee5-4d62-b376-0ee9b10d3958.png)
 
 Click on "Star Link" at the bottom right of Launch Page.
 
-![starlaunch_starlink](https://user-images.githubusercontent.com/49362324/152180875-4160e6d7-4ca9-4ac5-ac61-50d751987068.png)
-
 You may pick the filter to search by date, month, or year.
 
-![starlaunch_starlink_showdatepicker](https://user-images.githubusercontent.com/49362324/152180999-b8db8c40-d763-4c67-a638-bab450adfafa.png)
+![starlaunch_starlink_showresults](https://user-images.githubusercontent.com/49362324/152183888-3cc4fcfa-fca8-4822-a257-17cc1b5adbe8.png)
 
-![starlaunch_starlink_showresults](https://user-images.githubusercontent.com/49362324/152181043-1078b8e8-24ef-47d7-ad67-df4fefe21f36.png)
 
 You may git clone and run tests for the util functions (located in src/utils/library.test.js). 
+```npm run test```
 
 
 

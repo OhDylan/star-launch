@@ -105,11 +105,4 @@ it("Test retrieving all satelites and set to local storage", () => {
         expect(data[0].spaceTrack.LAUNCH_DATE).toBe("2019-05-24");
         expect(JSON.parse(localStorage.getItem("satellites"))[0].launch).toBe("5eb87d30ffd86e000604b378")
     })
-    
-    // return getAllSatellites().then(data => {
-    //     console.log(data)
-    //     expect(data.length).toBe(1);
-    //     expect(data[0].spaceTrack.LAUNCH_DATE).toBe("2019-05-24");
-    //     expect(JSON.parse(localStorage.getItem("satellites"))[0].launch).toBe("5eb87d30ffd86e000604b378")
-    // })
 })

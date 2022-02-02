@@ -21,12 +21,6 @@ export const getAllFailedLaunchesDetails = async (launches) => {
 // This is called when the form is submitted at Star Link Page
 export const getAllSatellites = async () => {
     if(!localStorage.getItem("satellites")){
-    //   fetch(`https://api.spacexdata.com/v4/starlink`)
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     localStorage.setItem("satellites",JSON.stringify(data));
-    //     return data;
-    //   })
         let allSatellites = await fetch(`https://api.spacexdata.com/v4/starlink`)
         let data = await allSatellites.json()
         localStorage.setItem("satellites",JSON.stringify(data))

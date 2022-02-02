@@ -1,7 +1,6 @@
 import React from 'react'
 import { Row, Col, Typography, Space, Button } from 'antd';
 import LandingSVG from '../assets/astronaut.svg';
-import NavigateButton from '../components/NavigateButton';
 
 const { Title, Text } = Typography;
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Row, Col, Typography } from 'antd';
 import SearchBar from '../components/SearchBar';
 import JsonPanel from '../components/JsonPanel';
-import { getAllFailedLaunches, getAllFailedLaunchesDetails } from '../utils/library';
+import { getAllLaunchPadDetails, getAllFailedLaunchesDetails } from '../utils/library';
 import NavigateButton from '../components/NavigateButton';
 
 
@@ -16,7 +16,7 @@ const LaunchPage = () => {
 
   useEffect(() => {
     if(query !== "") {
-      getAllFailedLaunches(query)
+      getAllLaunchPadDetails(query)
       .then((launchPadData) => {
         if(Object.keys(launchPadData).length !== 0){
           setLaunchPad(launchPadData?.name)

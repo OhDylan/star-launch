@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Row, Col, Typography, DatePicker, Dropdown, Menu, Button } from 'antd';
 import { DownOutlined } from '@ant-design/icons/lib/icons';
 import { getAllSatellites, filterByDate } from '../utils/library';
@@ -9,17 +9,25 @@ const { Title } = Typography;
 
 const StarLinkPage = () => {
 
-  const [satelliteData, setSatteliteData] = useState(() => {
-    return getAllSatellites();
-  });
+  const [satelliteData, setSatteliteData] = useState([]);
   const [filter, setFilter] = useState("");
   const [count, setCount] = useState(satelliteData.length);
 
+  // useEffect(() => {
+  //   getAllSatellites()
+  //   .then(data => {
+  //     setSatteliteData(data)
+  //     setCount(satelliteData.length)
+  //   })
+  // }, [])
+
   const dateSelected = (moment, dateString) => {
-    const allSatellites = getAllSatellites();
-    const filteredSatellites = filterByDate(allSatellites, dateString)
-    setSatteliteData(filteredSatellites)
-    setCount(filteredSatellites.length)
+    getAllSatellites()
+    .then(data => {
+      const filteredSatellites = filterByDate(data, dateString)
+      setSatteliteData(filteredSatellites)
+      setCount(filteredSatellites.length)
+    })
   }
 
   const toggleFilter = (e) => {

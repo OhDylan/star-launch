@@ -7,7 +7,7 @@ A single page app that provides the functionality to search for failed launches 
 
 Please check out the live demo here:
 
-[Star Link](https://star-launch.vercel.app/)
+[Star Launch](https://star-launch.vercel.app/)
 
 You may select to search for failed launches by launch pad (Launch Pad), or to search the satellites (Star Link).
 

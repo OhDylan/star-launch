@@ -30,7 +30,7 @@ Paste in the launch pad id with no failure launches.
 ```
 ![starlaunch_launchpage_nofailureresult](https://user-images.githubusercontent.com/49362324/152183788-501fd429-be2f-4e7c-b690-430fc14f2a11.png)
 
-Type in random id and you are expecting to see this response:
+Type in random id and you are expected to see this response:
 
 ![starlaunch_launchpage_idnotfound](https://user-images.githubusercontent.com/49362324/152183837-c7428b65-4ee5-4d62-b376-0ee9b10d3958.png)
 
